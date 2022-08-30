@@ -7,6 +7,27 @@
   pointer-events: none;
 }
 
+.navbar{
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.deco{
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.deco:hover{
+  background-color: lightblue;
+
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +57,4 @@
     transform: rotate(360deg);
   }
 }
+
