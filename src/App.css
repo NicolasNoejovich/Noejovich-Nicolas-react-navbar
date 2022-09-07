@@ -32,6 +32,19 @@
   max-height: 3rem;
 }
 
+.contador {
+  background-color: white;
+  margin-top: 6rem;
+  padding: 2rem;  
+  color: black;
+  border: solid 10px blaCK;
+
+};
+
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

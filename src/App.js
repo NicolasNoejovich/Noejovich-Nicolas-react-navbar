@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Widget from "./components/CartWidget/CartWidget";
 import Foto from "./cart.svg"
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Counter from './components/itemCount/ItemCount';
 
 function App() {
 
@@ -15,11 +16,18 @@ function App() {
         </NavBar>
        
       <header className="App-header">
+      
 
-      <ItemListContainer greeting="Hola como estan puse a girar el icono con el de react saludos!">
+      <ItemListContainer greeting="El contador esta abajo de los iconos saludos!">
       </ItemListContainer>
+    
         <img src={logo} className="App-logo" alt="logo" />
         <img src={Foto} className="App-logo" alt="logo" />
+        
+        <div className='contador'>
+          <Counter/>
+        </div>
+  
 
         <p>
           Edit <code>src/App.js</code> and save to reload.
