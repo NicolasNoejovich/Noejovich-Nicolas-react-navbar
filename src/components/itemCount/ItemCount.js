@@ -1,17 +1,28 @@
 import { useState } from "react";
 
 
+let stock = 6;
+let min = 1;
+
 const Counter = ({titulo}) => {
     const [inicialCount, setInicialCount] = useState(0)
 
 
 const suma = () => {
-    setInicialCount(inicialCount + 1);
-
+    if(inicialCount < stock){
+        
+        setInicialCount(inicialCount + 1);
+    }else{
+        alert="no hay mas stock"
+    }
 }
 
-const resta = () => {
+const resta = () => {    
+    if(inicialCount < min){
+    alert="stock agotado"
+}else{
     setInicialCount(inicialCount - 1);
+}
 
 }
 
